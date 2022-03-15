@@ -1,0 +1,189 @@
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+h1{
+    font-family: 'Stardos Stencil', cursive;
+    font-size: 40px;
+    color: #fed330;
+}
+body{
+    background-color: black;
+}
+#container{
+    width: 1100px;
+    height: auto;
+    margin-top: 15px;
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+}
+#fundoGame{
+    width: 1100px;
+    height: 600px;
+    background-image: url(/img/fundo-game.png);
+    border: 3px solid rgba(128,128,128,0.281);
+}
+#jogador{
+    width: 100px;
+    height: 93px;
+    position: absolute;
+    left: 3px;
+    top: 179px;
+    background-image: url(/img/movimento_nave.png);
+}
+#inimigo1{
+    width: 70px;
+    height: 51px;
+    position: absolute;
+    left: 1029px;
+    top: 150px;
+    background-image: url(/img/inimigo1.png);
+}
+#inimigo2{
+    width: 65px;
+    height: 65px;
+    position: absolute;
+    left: 1033px;
+    top: 250px;
+    background-image: url(/img/inimigo2.png);
+}
+#inimigo3{
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    left: 1001px;
+    top: 350px;
+    background-image: url(/img/inimigo3.png);
+}
+#amigo{
+    width: 30px;
+    height: 29px;
+    position: absolute;
+    left: 1067px;
+    top: 310px;
+    background-image: url(/img/estrela.png);
+}
+#inicio{
+    width: 500px;
+    height: 250px;
+    background-color: rgba(255, 255, 255, 0.404);
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 175px;
+    text-align: center;
+    padding: 10px;
+    border-radius: 30px;
+    cursor: pointer;
+}
+.action{
+    cursor: pointer;
+}
+p{
+    color: rgb(51, 4, 95);
+    font-size: 25px;
+    font-family: 'Stardos Stencil', cursive;
+}
+.anima1 {
+	background-image:url(../imgs/movimento_navepng);
+	animation:play .1s steps(2) infinite;
+
+    -webkit-animation: play .1s steps(2) infinite;
+    -moz-animation: play .1s steps(2) infinite;
+    -ms-animation: play .1s steps(2) infinite;
+    -o-animation: play .1s steps(2) infinite;
+}
+
+@keyframes play {
+	from {background-position:0px;}
+	to {background-position: 200px;}
+}
+
+
+@-webkit-keyframes play {
+   from { background-position:0px; }
+     to { background-position: 200px; }
+}
+
+@-moz-keyframes play {
+   from { background-position:0px; }
+     to { background-position: 200px; }
+}
+
+@-ms-keyframes play {
+   from { background-position:0px; }
+     to { background-position: 200px; }
+}
+
+@-o-keyframes play {
+   from { background-position:0px; }
+     to { background-position: 200px; }
+}
+#disparo {
+	width: 25px;
+	height: 4px;
+	position: absolute;
+	background-image: url(/img/tiro.png);
+}
+#explosao1 {
+	width:15px;
+	height:87px;
+	position:absolute;
+
+}
+
+#explosao2 {
+	width:15px;
+	height:87px;
+	position:absolute;
+	
+}
+
+#explosao3 {
+	width:15px;
+	height:87px;
+	position:absolute;
+	
+}
+#placar {
+	width: 320px;
+	height: 30px;
+	position: absolute;
+    text-align: center;
+	left: 2px;
+	top: 568px;
+    background-color: rgba(255, 255, 255, 0.404);
+    border-radius: 10px;
+}
+h2 {
+	font-family: 'Stardos Stencil', cursive;
+	font-size: 22px;
+	color:rgb(0, 0, 0);
+}
+#energia {
+	width: 140px;
+	height: 38px;
+	position: absolute;
+	left: 958px;
+	top: 2px;	
+}
+h3 {
+	font-family: 'Stardos Stencil', cursive;
+	font-size:20px;
+	color:rgb(51, 4, 95);
+    cursor: pointer;
+}
+
+#fim {
+	width:400px;
+	height:190px;
+	background-color:rgba(255, 255, 255, 0.404);
+ 	margin-left:auto;
+    margin-right:auto;
+ 	margin-top:100px;
+	text-align:center;
+	padding:10px;
+    border-radius: 30px;
+}
